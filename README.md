@@ -1,5 +1,4 @@
 # ASASMeeker
-ASAS Meeker Website
 
 This is public ASAS Meeker website, built using HTML, CSS, and JavaScript. The website is designed to showcase students skills, experience, and be used by students for bus pass lookup.
 
