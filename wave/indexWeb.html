@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Scroll Header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="styleWeb.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <main>
+    <header id="app-header" class="app-header">
+
+      <div class="background-container">
+        <div id="background-back" class="background"></div>
+        <div id="background-front" class="background"></div>
+      </div>
+
+      <div class="header-content">
+        <div id="small-toolbar" class="app-toolbar">
+
+          <div id="small-title" class="small-title">All Stars At Meeker</div>
+
+        </div>
+
+        <div id="large-toolbar" class="app-toolbar tall">
+          <div id="large-title" class="large-title">☆ All Stars At Meeker</div>
+        </div>
+      </div>
+      <div class="mp3-container">
+        <h2>Song by ASAS Student</h2>
+        <audio controls class="custom-controls">
+          <source src="8bars.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </header>
+    <div class="icon-button" id="myButton" onclick="showLinks()">
+      <div class="icon">
+        <i class="material-icons">menu</i>
+      </div>
+    </div>
+
+    <div id="links" style="display:none;">
+      <a href="/ASASMeeker/distO/indexCar.html">ABOUT US</a>
+      <a href="/ASASMeeker/cube/cube.html">SIGN UP</a>
+      <a href="/ASASMeeker/dist/index.html">LOCATIONS</a>
+    </div>
+
+    <button id="scrollBtn">BUS PASS</button>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-title">Cooking</div>
+        <img src="cookegg.jpg" id="cookegg">
+        <p><strong>Introducing a cooking class like no other</strong> - led by an expert teacher with more than 15 years
+          of experience in teaching cooking, and supported by enthusiastic assistants, this class is designed to engage
+          middle school students in a fun and educational cooking experience.</p>
+        <p><strong>Join us for an exciting culinary adventure and learn to cook like a pro!</strong></p>
+      </div>
+      <div class="video-container2">
+        <video id="my-video" controls playsinline>
+          <source src="/ASASMeeker/wave/pics/CookingVideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cardSports">
+        <div class="card-title-Sports">Sports</div>
+        <img src="pics/sports.jpg" id="cookegg">
+        <p>Led by the <strong>legendary high school football coach Quincy!</strong> - this class is designed to instill
+          discipline, teamwork, and perseverance in the students both on and off the field. Coach Quincy is known for
+          his tough love approach to coaching, and this class will challenge students to push themselves to their limits
+          and work together to achieve their goals.</p>
+
+        <p><strong>Join us for an exceptional sports program and have fun with friends!</strong> </p>
+      </div>
+      <div class="video-container">
+        <video id="my-video2" controls playsinline>
+          <source src="/ASASMeeker/wave/pics/SportVideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cardSports">
+        <div class="card-title-Sports">Music</div>
+        <img src="pics/IMG_0150.jpeg" id="cookegg">
+        <p>Our Music program is the perfect opportunity for students to explore their musical talents and <strong>learn
+            the ins and outs of music production, </strong> - including DJ skills and music theory, with the guidance of
+          a professional teacher who has worked with popular producers and has their own label. Students will get
+          hands-on experience creating their own music and building their confidence in expressing themselves
+          creatively.</p>
+        <p><strong>Join us today and see just how much you can achieve!</strong></p>
+      </div>
+      <div class="video-container">
+        <video id="my-video" controls playsinline>
+          <source src="meeker.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cardSports">
+        <div class="card-title-Sports">Art</div>
+        <img src="pics/art.jpg" id="cookegg">
+        <p>Our Art program offers the perfect opportunity for students to explore their creativity and <strong>learn
+            photography, video making, and the study of art from a professional teacher</strong> - with a Bachelor's
+          degree from SeattleU. With engaging activities and projects, students can develop their artistic skills and
+          express themselves freely in a supportive environment. </p>
+        <p><strong>Join us today and unleash your creativity while having fun!</strong></p>
+      </div>
+      <div class="video-container">
+        <video id="my-video" controls playsinline>
+          <source src="meeker.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cardSports">
+        <div class="card-title-Sports">Coding</div>
+        <img src="/ASASMeeker/wave/drone.jpeg" id="cookegg">
+        <p>Our Coding program is the perfect opportunity for students to <strong>explore the world of coding and game
+            design</strong> - with the guidance of a computer science student from the University of Washington who
+          loves to code. Students will learn the fundamentals of coding and game design while exploring the real-life
+          applications of coding in a supportive and inclusive environment. </p>
+        <p><strong>Join us today and discover your passion for coding and game design!</strong></p>
+        <a href="/ASASMeeker/coding/index.html" class="card-link">Learn more</a>
+      </div>
+      <div class="video-container">
+        <video id="my-video" controls playsinline>
+          <source src="meeker.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <a href="/ASASMeeker/buspass/buspass.html" class="button">BusPass</a>
+    <footer>
+      <div class="my-footer">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+  <script src="formWeb.js"></script>
+
+</body>
+
+</html>

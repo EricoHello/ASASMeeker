@@ -1,0 +1,349 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    line-height: 1.4;
+  }
+  
+  html, body {
+    height: 100%;
+    min-height: 100%;
+    font-family: Roboto, sans-serif;
+  }
+  
+  main {
+    padding-top: 300px;
+    font-family: arial;
+    background: #eee;
+    min-height: 100%;
+  }
+  
+  .app-header {
+    display: block;
+    background: #3f51b5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    height: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    
+  }
+  #scrollBtn {
+    background-color: #d69a0e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+}
+  .header-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .app-toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 64px;
+    padding: 0 16px;
+    pointer-events: none;
+    font-size: 20px;
+  }
+  
+  #large-toolbar {
+    position: absolute;
+    bottom: 0;
+    transform-origin: left top;
+    margin-bottom: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+    
+  }
+  
+  .small-title,
+  .large-title {
+    transform-origin: left top;
+    white-space: nowrap;
+    flex: 1;
+    flex-basis: 1e-9px;
+    overflow: hidden;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+    left: 65px;
+    
+  }
+  
+  .small-title {
+    margin-left: 14px;
+    opacity: 0;
+  }
+  
+  .large-title {
+    will-change: transform, opacity;
+    font-size: 56px;
+    font-size: 2em;
+    margin-left: 64px;
+  }
+    .my-button {
+    background-color: #6a5acd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  #links {
+    position: fixed;
+    top: 15px;
+    left: 30%;
+    background-color: #d69a0e;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    display: block;
+  }
+  #links a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    
+  }
+  #links a:hover {
+    text-decoration: underline;
+  }
+  .icon-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 3px;
+    outline: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-size: 0;
+    line-height: 1;
+    width: 70px;
+    height: 65px;
+    box-sizing: border-box !important;
+    color: #fff;
+    
+  }
+  
+  .material-icons {
+    font-size: 50px;
+  }
+
+  .icon-button .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .background-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .background {
+    pointer-events: none;
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    will-change: transform, opacity;
+  }
+  
+  #background-back {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/mountain-02.jpg);
+    background-position: left center;
+    opacity: 0;
+  }
+  
+  #background-front {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/mountain-01.jpg);
+    background-position: left center;
+  }
+  
+  .mp3-container {
+    background-color: #d7d6d620; /* set the background color */
+    padding: 10px; /* add some padding */
+    border-radius: 5px; /* round the corners */
+  }
+  
+  .mp3-container h2 {
+    color: #2d2d2d;
+    margin: 0; /* remove any default margin */
+    font-size: 5.2em; /* set the font size */
+    font-weight: bold; /* set the font weight */
+  }
+
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  audio {
+    width: 120%;
+    max-width: 100%;
+    zoom: 1.5;
+  }
+  .button {
+    background-color: #d69a0e;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 100vw;
+    margin-bottom: 50px;
+    height: 100px;
+  }
+  .card {
+    padding: 16px;
+    margin: 24px;
+    margin-top: 300px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    width: 50%;
+  }
+  
+  .card .card-title {
+    padding: 24px 16px 8px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  
+  .card p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.6em;
+    padding: 0 16px;
+  }
+  .video-container2 {
+    margin-right: 40px;
+    margin-top: 350px;
+    margin-bottom: 80px;
+    width: 40%;
+  }
+  .video-container {
+    margin-right: 40px;
+    margin-top: 120px;
+    margin-bottom: 150px;
+    width: 40%;
+  }
+  
+  #my-video {
+    width: 100%;
+    height: auto;
+  }
+
+  #my-video2 {
+    width: 100%;
+    height: auto;
+  }
+  
+  #cookegg {
+    float: right;
+    max-width: 40%;
+    max-height: 200px;
+    margin-left: 10px;
+  }
+
+  .cardSports {
+    padding: 16px;
+    margin: 24px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    width: 50%;
+    
+  }
+  .cardSports .card-title-Sports {
+    padding: 24px 16px 8px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .cardSports p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.6em;
+    padding: 0 16px;
+  }
+  .card-link {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #71aaf4;
+    margin-right: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #79b0f3;
+    padding: 10px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 300px;
+ }
+ 
+ footer p {
+    margin: 0;
+ }
+ 
+ footer a {
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+ footer a:hover {
+    text-decoration: underline;
+ }
